@@ -1,0 +1,309 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.fondo {
+    width: 100%;
+    font-size: 1rem;
+    background-image: url("../img/fondo.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: 0.3fr 2.4fr 0.3fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer"
+    ;
+}
+.header {
+    
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 15.625rem;
+}
+
+.menu {
+    grid-area: menu;
+    max-width: 75em;
+    display: flex;
+    justify-content:left;
+    flex-wrap: nowrap;
+    padding: 0.9375rem;
+    width: 100%;
+      
+}
+
+.menu li {
+    min-width: 190px;
+    color: white;
+    list-style: none;
+    padding: 0.85rem;
+    margin-bottom: 0.9375rem;
+    border: chocolate groove 1px;
+    text-align:center;
+
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+.menu a:hover {
+    color: rgb(34, 93, 161);
+    font-weight: 500;
+}
+
+.menu li:hover {
+    background-color: rosybrown;
+}
+
+.main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0.9375rem;
+    padding-bottom: 0.9375rem;
+    font-size: 120%;
+    color:white
+}
+
+.main h2 {
+    padding-bottom: 0.625rem;
+    align-items: center;
+    font-size: x-large;
+}
+
+.main p {
+    text-align: center;
+    line-height: 2;
+    font-size: large;
+}
+
+.main table {
+    margin-top: 0.625rem;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    border-color:chocolate;
+}
+
+.slider {
+    grid-area: slider;
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider ul {
+    display: flex;
+    text-align: center;
+    padding: 0;
+    width: 400%;
+    animation: cambio 20s infinite alternate;
+    animation-timing-function: step-end;
+}
+
+.slider li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider img {
+    width: 50%;
+}
+
+@keyframes cambio {
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -200%;
+    }
+
+    100% {
+        margin-left: -200%;
+    }
+}
+
+/* QUIENES SOMOS */
+.mainQuienes {
+    grid-area: main;
+    list-style: inside;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-top: 0.9375rem;
+    padding-bottom: 0.9375rem;
+    font-size: larger;
+    color:white
+}
+.mainQuienes a{
+    color:white;
+}
+
+.section {
+    width: 70%;
+    height: 20%;
+}
+
+.article {
+    width: 60%;
+    height: 60%;
+}
+
+/* Marcas con las que trabajamos */
+.mainMarcas p{
+    padding-bottom: 0.625rem;
+    align-items: center;
+    font-size: x-large;
+}
+.mainMarcas {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-top: 0.9375rem;
+    padding-bottom: 0.9375rem;
+    font-size: 120%;
+    color:white
+}
+
+.mainMarcas ol {
+    display: grid;
+    grid-template-columns: 200px 250px;
+    grid-template-rows: 140px 100px;
+    align-content:flex-start;
+    grid-column-gap: 70px;
+    gap: 50px;
+    align-items: end;
+    justify-items: end;
+
+}
+
+.dewalt:hover{
+    transition: transform .5s;
+    transform: scale(1.050);
+}
+.makita:hover{
+    transition: transform .5s;
+    transform: scale(1.050);
+}
+.black:hover{
+    transition: transform .5s;
+    transform: scale(1.050);
+}
+.metabo:hover{
+    transition: transform .5s;
+    transform: scale(1.050);
+}
+.bosch:hover{
+    transition: transform .5s;
+    transform: scale(1.050);
+}
+.stanley:hover{
+    transition: transform .5s;
+    transform: scale(1.050);
+}
+.tacsa:hover{
+    transition: transform .5s;
+    transform: scale(1.050);
+}
+.tresm:hover{
+    transition: transform .5s;
+    transform: scale(1.050);
+}
+.sika:hover{
+    transition: transform .5s;
+    transform: scale(1.050);
+}
+.doblea:hover{
+    transition: transform .5s;
+    transform: scale(1.050);
+}
+
+/* SOLICITAR CATALOGO */
+.mainCatalogo{
+    grid-area: main;
+}
+.mainCatalogo form{
+    display: flex;
+     flex-direction: column;
+     flex-wrap: nowrap;
+     align-items: center;
+    padding-top: 0.9375rem;
+    padding-bottom: 0.9375rem;
+    font-size: 150%;
+    color:white
+}
+.mainCatalogo p{
+    padding: 0.625rem;
+}
+.mainCatalogo input{
+    width: 20%;
+    height: 5%;
+}
+
+/* MAIN CONTACTO */
+.mainContacto{
+    grid-area: main;
+    display: flex;
+     flex-direction: column;
+     flex-wrap: nowrap;
+     align-items: center;
+    padding-top: 0.9375rem;
+    padding-bottom: 0.9375rem;
+    font-size: 150%;
+    color:white
+}
+.mainContacto input{
+    width: 50%;
+    height: 10%;
+    
+}
+.footer {
+    grid-area: footer;
+    display: flex;
+    list-style: none;
+    bottom: 0px;
+    width: 100%;
+}
+.footer a{
+    color: white;
+}
+
+
+

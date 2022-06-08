@@ -3,6 +3,7 @@
     padding: 0%;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 .fondo {
     width: 100%;
     font-size: 1rem;
@@ -14,31 +15,37 @@
     grid-template-rows: 0.3fr 2.4fr 0.3fr;
     grid-template-columns: 1fr;
     grid-template-areas:
-    "header"
-    "main"
-    "footer"
+        "header"
+        "main"
+        "footer"
     ;
 }
+
 .header {
-    
+    min-height: 15vh;
     grid-area: header;
     display: flex;
     justify-content: space-between;
 }
 
-.logo{
+.logo {
     width: 15.625rem;
+}
+
+.logo:hover {
+    transition: transform .5s;
+    transform: scale(1.050);
 }
 
 .menu {
     grid-area: menu;
     max-width: 75em;
     display: flex;
-    justify-content:left;
+    justify-content: left;
     flex-wrap: nowrap;
     padding: 0.9375rem;
     width: 100%;
-      
+
 }
 
 .menu li {
@@ -48,7 +55,7 @@
     padding: 0.85rem;
     margin-bottom: 0.9375rem;
     border: chocolate groove 1px;
-    text-align:center;
+    text-align: center;
 
 }
 
@@ -66,6 +73,9 @@
 
 .menu li:hover {
     background-color: rosybrown;
+        transition: transform .5s;
+        transform: scale(1.050);
+    
 }
 
 .main {
@@ -76,7 +86,7 @@
     padding-top: 0.9375rem;
     padding-bottom: 0.9375rem;
     font-size: 120%;
-    color:white
+    color: white
 }
 
 .main h2 {
@@ -95,7 +105,7 @@
     margin-top: 0.625rem;
     padding-top: 0.625rem;
     padding-bottom: 0.625rem;
-    border-color:chocolate;
+    border-color: chocolate;
 }
 
 .slider {
@@ -168,10 +178,11 @@
     padding-top: 0.9375rem;
     padding-bottom: 0.9375rem;
     font-size: larger;
-    color:white
+    color: white
 }
-.mainQuienes a{
-    color:white;
+
+.mainQuienes a {
+    color: white;
 }
 
 .section {
@@ -185,11 +196,12 @@
 }
 
 /* Marcas con las que trabajamos */
-.mainMarcas p{
+.mainMarcas p {
     padding-bottom: 0.625rem;
     align-items: center;
     font-size: x-large;
 }
+
 .mainMarcas {
     grid-area: main;
     display: flex;
@@ -199,14 +211,14 @@
     padding-top: 0.9375rem;
     padding-bottom: 0.9375rem;
     font-size: 120%;
-    color:white
+    color: white
 }
 
 .mainMarcas ol {
     display: grid;
     grid-template-columns: 200px 250px;
     grid-template-rows: 140px 100px;
-    align-content:flex-start;
+    align-content: flex-start;
     grid-column-gap: 70px;
     gap: 50px;
     align-items: end;
@@ -214,96 +226,114 @@
 
 }
 
-.dewalt:hover{
+.dewalt:hover {
     transition: transform .5s;
     transform: scale(1.050);
 }
-.makita:hover{
+
+.makita:hover {
     transition: transform .5s;
     transform: scale(1.050);
 }
-.black:hover{
+
+.black:hover {
     transition: transform .5s;
     transform: scale(1.050);
 }
-.metabo:hover{
+
+.metabo:hover {
     transition: transform .5s;
     transform: scale(1.050);
 }
-.bosch:hover{
+
+.bosch:hover {
     transition: transform .5s;
     transform: scale(1.050);
 }
-.stanley:hover{
+
+.stanley:hover {
     transition: transform .5s;
     transform: scale(1.050);
 }
-.tacsa:hover{
+
+.tacsa:hover {
     transition: transform .5s;
     transform: scale(1.050);
 }
-.tresm:hover{
+
+.tresm:hover {
     transition: transform .5s;
     transform: scale(1.050);
 }
-.sika:hover{
+
+.sika:hover {
     transition: transform .5s;
     transform: scale(1.050);
 }
-.doblea:hover{
+
+.doblea:hover {
     transition: transform .5s;
     transform: scale(1.050);
 }
 
 /* SOLICITAR CATALOGO */
-.mainCatalogo{
+/* popup */
+.overlay {
+    background: rgba(0, 0, 0, .3);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.mainCatalogo {
     grid-area: main;
 }
-.mainCatalogo form{
+.mainCatalogo form {
     display: flex;
-     flex-direction: column;
-     flex-wrap: nowrap;
-     align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
     padding-top: 0.9375rem;
     padding-bottom: 0.9375rem;
     font-size: 150%;
-    color:white
-}
-.mainCatalogo p{
+    color: white;
+} 
+.mainCatalogo p {
     padding: 0.625rem;
 }
-.mainCatalogo input{
+.mainCatalogo input {
     width: 20%;
     height: 5%;
 }
-
 /* MAIN CONTACTO */
-.mainContacto{
+.mainContacto {
     grid-area: main;
     display: flex;
-     flex-direction: column;
-     flex-wrap: nowrap;
-     align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
     padding-top: 0.9375rem;
     padding-bottom: 0.9375rem;
     font-size: 150%;
-    color:white
+    color: white
 }
-.mainContacto input{
+
+.mainContacto input {
     width: 50%;
     height: 10%;
-    
+
 }
+
 .footer {
     grid-area: footer;
     display: flex;
     list-style: none;
     bottom: 0px;
     width: 100%;
+    justify-content: flex-end;
+
 }
-.footer a{
+
+.footer a {
     color: white;
 }
-
-
-

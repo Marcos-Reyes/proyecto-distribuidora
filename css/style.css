@@ -439,14 +439,14 @@
 
 }
 
-/* movil */
+/* MOVIL */
 @media screen and (max-width: 450px) {
     .logo {
         width: 100%;
     }
 
     .header {
-        width: auto;
+        width: 100%;
         grid-area: header;
         display: block;
         justify-content: space-between;

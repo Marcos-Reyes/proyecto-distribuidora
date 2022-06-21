@@ -367,11 +367,12 @@
 
     /* quines somo */
     .mainQuienes {
-        grid-area: main;
+        /* grid-area: main; */
         font-size: 14px;
     }
 
 }
+
 
 /* movil grande / tablets */
 @media screen and (max-width: 720px) {

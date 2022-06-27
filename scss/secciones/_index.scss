@@ -1,0 +1,228 @@
+.main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0.9375rem;
+    padding-bottom: 0.9375rem;
+    // font-size: 120%;
+    // color: white; 
+   
+}       
+    .main h2 {
+      padding-bottom: 0.625rem;
+      align-items: center;
+      font-size: x-large;
+     p{
+    @extend %estiloMain;
+    }
+     }
+
+    .main p {
+      text-align: center;
+      line-height: 2;
+      font-size: large;
+      color: white;
+       }
+    .main table {
+      margin-top: 0.625rem;
+      padding-top: 0.625rem;
+      padding-bottom: 0.625rem;
+      border-color: chocolate; 
+      tr{
+        @extend %estiloTextoTabla;
+    }}
+
+        /* escritorio */
+  @media screen and (max-width: 1000px) {
+    .header {
+      width: auto;
+    }
+  
+    .logo {
+      width: 225px;
+    }
+  
+    .header__nav li {
+      width: 100%;
+      color: white;
+      list-style: none;
+      padding: 1rem;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+  
+    .fondo {
+      font-size: 14px;
+    }
+  
+    /* quines somo */
+  
+    .mainQuienes {
+      /* grid-area: main; */
+      font-size: 14px;
+    }
+  }
+  
+  /* movil grande / tablets */
+  @media screen and (max-width: 720px) {
+    .header {
+      width: auto;
+    }
+  
+    .logo {
+      width: 180px;
+    }
+  
+    .header__nav li {
+      width: 100%;
+      color: white;
+      list-style: none;
+      padding: 10px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+  
+    /* marcas con las que trabajamos */
+  
+    .mainMarcas {
+      p {
+        font-size: 16px;
+      }
+  
+      grid-area: main;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      color: white;
+  
+      ol {
+        display: grid;
+        grid-template-columns: 180px 230px;
+        grid-template-rows: 140px 90px;
+        align-content: flex-start;
+        grid-column-gap: 50px;
+        gap: 45px;
+        align-items: center;
+        justify-items: center;
+      }
+    }
+  
+    .mainCatalogo {
+      form {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        color: white;
+      }
+  
+      grid-area: main;
+      font-size: 16px;
+    }
+  }
+  
+  /* MOVIL */
+  @media screen and (max-width: 500px) {
+    .logo {
+      width: 100%;
+    }
+  
+    .header {
+      width: 100%;
+      grid-area: header;
+      display: block;
+      justify-content: space-between;
+    }
+  
+    .header__nav {
+      li {
+        width: auto;
+        color: white;
+        list-style: none;
+        padding: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+  
+      grid-area: menu;
+      display: contents;
+      justify-content: left;
+      flex-wrap: wrap;
+      padding: 15px;
+      width: 90%;
+    }
+  
+    .cajas {
+      width: 220px;
+      height: 210px;
+    }
+  
+    .mainCatalogo input {
+      width: 60%;
+      height: 5%;
+    }
+  
+    .slider {
+      grid-area: slider;
+      width: auto;
+      overflow: hidden;
+  
+      ul {
+        display: flex;
+        text-align: center;
+        padding: 0;
+        width: 400%;
+        animation: cambio 10s infinite alternate;
+        animation-timing-function: step-end;
+      }
+  
+      li {
+        width: 100%;
+        list-style: none;
+      }
+  
+      img {
+        width: 50%;
+      }
+    }
+  
+    @keyframes cambio {
+      0% {
+        margin-left: 0;
+      }
+  
+      20% {
+        margin-left: 0;
+      }
+  
+      25% {
+        margin-left: -100%;
+      }
+  
+      45% {
+        margin-left: -100%;
+      }
+  
+      50% {
+        margin-left: -200%;
+      }
+  
+      70% {
+        margin-left: -200%;
+      }
+  
+      75% {
+        margin-left: -200%;
+      }
+  
+      100% {
+        margin-left: -200%;
+      }
+    }
+  }

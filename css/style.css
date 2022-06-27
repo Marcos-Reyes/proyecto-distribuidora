@@ -15,67 +15,11 @@
   grid-template-columns: 1fr;
   grid-template-areas: "header" "main" "footer"; }
 
-.header {
-  width: auto;
-  grid-area: header;
-  display: flex;
-  justify-content: space-between; }
-
 .logo {
   width: 250px; }
   .logo:hover {
     transition: transform .5s;
     transform: scale(1.05); }
-
-.menu {
-  grid-area: menu;
-  display: flex;
-  justify-content: left;
-  flex-wrap: nowrap;
-  padding: 0.9375rem;
-  width: 90; }
-  .menu li {
-    width: 100%;
-    color: white;
-    list-style: none;
-    padding: 0.85rem;
-    margin-bottom: 0.9375rem;
-    text-align: center; }
-  .menu a {
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 1rem; }
-    .menu a:hover {
-      color: #225da1;
-      font-weight: 500; }
-  .menu li:hover {
-    background-color: rosybrown;
-    transition: transform .5s;
-    transform: scale(1.05); }
-
-.main {
-  grid-area: main;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 0.9375rem;
-  padding-bottom: 0.9375rem;
-  font-size: 120%;
-  color: white; }
-  .main h2 {
-    padding-bottom: 0.625rem;
-    align-items: center;
-    font-size: x-large; }
-  .main p {
-    text-align: center;
-    line-height: 2;
-    font-size: large; }
-  .main table {
-    margin-top: 0.625rem;
-    padding-top: 0.625rem;
-    padding-bottom: 0.625rem;
-    border-color: chocolate; }
 
 .slider {
   grid-area: slider;
@@ -216,7 +160,7 @@
     width: auto; }
   .logo {
     width: 225px; }
-  .menu li {
+  .header__nav li {
     width: 100%;
     color: white;
     list-style: none;
@@ -236,7 +180,7 @@
     width: auto; }
   .logo {
     width: 180px; }
-  .menu li {
+  .header__nav li {
     width: 100%;
     color: white;
     list-style: none;
@@ -285,14 +229,213 @@
     grid-area: header;
     display: block;
     justify-content: space-between; }
-  .menu {
+  .header__nav {
     grid-area: menu;
     display: contents;
     justify-content: left;
     flex-wrap: wrap;
     padding: 15px;
     width: 90%; }
-    .menu li {
+    .header__nav li {
+      width: auto;
+      color: white;
+      list-style: none;
+      padding: 10px;
+      margin-bottom: 10px;
+      text-align: center; }
+  .cajas {
+    width: 220px;
+    height: 210px; }
+  .mainCatalogo input {
+    width: 60%;
+    height: 5%; }
+  .slider {
+    grid-area: slider;
+    width: auto;
+    overflow: hidden; }
+    .slider ul {
+      display: flex;
+      text-align: center;
+      padding: 0;
+      width: 400%;
+      animation: cambio 10s infinite alternate;
+      animation-timing-function: step-end; }
+    .slider li {
+      width: 100%;
+      list-style: none; }
+    .slider img {
+      width: 50%; }
+  @keyframes cambio {
+    0% {
+      margin-left: 0; }
+    20% {
+      margin-left: 0; }
+    25% {
+      margin-left: -100%; }
+    45% {
+      margin-left: -100%; }
+    50% {
+      margin-left: -200%; }
+    70% {
+      margin-left: -200%; }
+    75% {
+      margin-left: -200%; }
+    100% {
+      margin-left: -200%; } } }
+
+.main h2 p {
+  text-align: center;
+  font-size: 110%;
+  color: white; }
+
+.main table tr {
+  color: white; }
+
+.header {
+  width: auto;
+  grid-area: header;
+  display: flex;
+  justify-content: space-between; }
+
+.header__nav {
+  grid-area: menu;
+  display: flex;
+  justify-content: left;
+  flex-wrap: nowrap;
+  padding: 0.9375rem;
+  width: 90; }
+
+.header__nav li {
+  width: 100%;
+  color: white;
+  list-style: none;
+  padding: 0.85rem;
+  margin-bottom: 0.9375rem;
+  text-align: center; }
+
+.header__nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem; }
+
+.header__nav a:hover {
+  color: #225da1;
+  font-weight: 500; }
+
+.header__nav li:hover {
+  background-color: rosybrown;
+  transition: transform .5s;
+  transform: scale(1.05); }
+
+.main {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 0.9375rem;
+  padding-bottom: 0.9375rem; }
+
+.main h2 {
+  padding-bottom: 0.625rem;
+  align-items: center;
+  font-size: x-large; }
+
+.main p {
+  text-align: center;
+  line-height: 2;
+  font-size: large;
+  color: white; }
+
+.main table {
+  margin-top: 0.625rem;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  border-color: chocolate; }
+
+/* escritorio */
+@media screen and (max-width: 1000px) {
+  .header {
+    width: auto; }
+  .logo {
+    width: 225px; }
+  .header__nav li {
+    width: 100%;
+    color: white;
+    list-style: none;
+    padding: 1rem;
+    margin-bottom: 15px;
+    text-align: center; }
+  .fondo {
+    font-size: 14px; }
+  /* quines somo */
+  .mainQuienes {
+    /* grid-area: main; */
+    font-size: 14px; } }
+
+/* movil grande / tablets */
+@media screen and (max-width: 720px) {
+  .header {
+    width: auto; }
+  .logo {
+    width: 180px; }
+  .header__nav li {
+    width: 100%;
+    color: white;
+    list-style: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center; }
+  /* marcas con las que trabajamos */
+  .mainMarcas {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white; }
+    .mainMarcas p {
+      font-size: 16px; }
+    .mainMarcas ol {
+      display: grid;
+      grid-template-columns: 180px 230px;
+      grid-template-rows: 140px 90px;
+      align-content: flex-start;
+      grid-column-gap: 50px;
+      gap: 45px;
+      align-items: center;
+      justify-items: center; }
+  .mainCatalogo {
+    grid-area: main;
+    font-size: 16px; }
+    .mainCatalogo form {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      color: white; } }
+
+/* MOVIL */
+@media screen and (max-width: 500px) {
+  .logo {
+    width: 100%; }
+  .header {
+    width: 100%;
+    grid-area: header;
+    display: block;
+    justify-content: space-between; }
+  .header__nav {
+    grid-area: menu;
+    display: contents;
+    justify-content: left;
+    flex-wrap: wrap;
+    padding: 15px;
+    width: 90%; }
+    .header__nav li {
       width: auto;
       color: white;
       list-style: none;

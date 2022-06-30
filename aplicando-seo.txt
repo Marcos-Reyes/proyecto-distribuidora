@@ -1,0 +1,8 @@
+Cambio 1.
+Se aplico extend y mixin
+Cambio 2.
+Se modificaron algunas clases y agregue por ejemplo "boton" en contacto y solicitar catalogo para poder aplicar los mismos.
+Cambio 3.
+Se agrego BEM al index.html.
+tambien aplique .gitignore.
+y modificaciones visuales.

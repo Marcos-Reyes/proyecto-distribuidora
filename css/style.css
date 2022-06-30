@@ -107,43 +107,21 @@
     align-items: end;
     justify-items: end; }
 
-.dewalt:hover, .makita:hover, .black:hover, .metabo:hover, .bosch:hover, .stanley:hover, .tacsa:hover, .tresm:hover, .sika:hover, .doblea:hover {
+.dewalt:hover,
+.makita:hover,
+.black:hover,
+.metabo:hover,
+.bosch:hover,
+.stanley:hover,
+.tacsa:hover,
+.tresm:hover,
+.sika:hover,
+.doblea:hover {
   transition: transform .5s;
   transform: scale(1.05); }
 
 /* SOLICITAR CATALOGO */
-.mainCatalogo {
-  grid-area: main;
-  font-size: 22px; }
-  .mainCatalogo form {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    padding-top: 0.9375rem;
-    padding-bottom: 0.9375rem;
-    color: white; }
-  .mainCatalogo p {
-    padding: 0.625rem; }
-  .mainCatalogo input {
-    width: 30%;
-    height: 5%; }
-
 /* MAIN CONTACTO */
-.mainContacto {
-  grid-area: main;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
-  padding-top: 0.9375rem;
-  padding-bottom: 0.9375rem;
-  font-size: 150%;
-  color: white; }
-  .mainContacto input {
-    width: 50%;
-    height: 10%; }
-
 .footer {
   grid-area: footer;
   display: flex;
@@ -481,3 +459,40 @@
       margin-left: -200%; }
     100% {
       margin-left: -200%; } } }
+
+.mainContacto {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding-top: 0.9375rem;
+  padding-bottom: 0.9375rem;
+  font-size: 150%;
+  color: white; }
+  .mainContacto input {
+    padding: 5px;
+    width: 50%; }
+  .mainContacto .boton {
+    background-color: grey;
+    color: white; }
+
+.mainCatalogo {
+  grid-area: main;
+  font-size: 22px; }
+  .mainCatalogo form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-top: 0.9375rem;
+    padding-bottom: 0.9375rem;
+    color: white; }
+  .mainCatalogo p {
+    padding: 0.625rem; }
+  .mainCatalogo input {
+    width: 30%;
+    height: 5%; }
+  .mainCatalogo .boton {
+    background-color: grey;
+    color: white; }

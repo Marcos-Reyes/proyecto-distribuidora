@@ -1,0 +1,21 @@
+.mainContacto {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-top: 0.9375rem;
+    padding-bottom: 0.9375rem;
+    font-size: 150%;
+    color: white;
+    
+  
+    input {
+        padding: 5px;
+      width: 50%;
+    
+    }
+    .boton{
+      @include btn(grey,white);
+    }
+  }

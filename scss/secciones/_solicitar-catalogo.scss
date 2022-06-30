@@ -1,0 +1,27 @@
+.mainCatalogo {
+    grid-area: main;
+    font-size: 22px;
+  
+    form {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+      padding-top: 0.9375rem;
+      padding-bottom: 0.9375rem;
+      color: white;
+    }
+  
+    p {
+      padding: 0.625rem;
+    }
+  
+    input {
+      width: 30%;
+      height: 5%;
+    }
+    
+    .boton{
+        @include btn(grey,white);
+    }
+  }

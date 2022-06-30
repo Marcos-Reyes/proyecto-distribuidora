@@ -10,30 +10,35 @@
 </head>
 
 <body class="fondo">
-    <header class="header">
-        <a href="./index.html">
-            <img src="./img/DISTRIBUIDORA REYES.png" alt="Logo" class="logo">
-        </a>
-        <nav>
-            <ul class="menu">
-                <li>
-                    <a href="./index.html">INICIO</a>
-                </li>
-                <li>
-                    <a href="./quienes-somos.html">QUIENES SOMOS</a>
-                </li>
-                <li>
-                    <a href="./marcas-con-las-que-trabajamos.html">MARCAS CON LAS QUE TRABAJAMOS</a>
-                </li>
-                <li>
-                    <a href="./solicitar-catalogo.html">SOLICITAR CATALOGO</a>
-                </li>
-                <li>
-                    <a href="./contacto.html">CONTACTO</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <!-- BEM -->
+    <!-- BLOQUE -->
+        <header class="header">
+            <!-- elemento -->
+            <a href="./index.html">
+                <img src="./img/DISTRIBUIDORA REYES.png" alt="Logo" class="logo">
+            </a>
+            <!-- elemento -->
+            <nav>
+                <!-- elemento -->
+                <ul class="header__nav">
+                    <li>
+                        <a href="./index.html">INICIO</a>
+                    </li>
+                    <li>
+                        <a href="./quienes-somos.html">QUIENES SOMOS</a>
+                    </li>
+                    <li>
+                        <a href="./marcas-con-las-que-trabajamos.html">MARCAS CON LAS QUE TRABAJAMOS</a>
+                    </li>
+                    <li>
+                        <a href="./solicitar-catalogo.html">SOLICITAR CATALOGO</a>
+                    </li>
+                    <li>
+                        <a href="./contacto.html">CONTACTO</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
     <main class="mainContacto">
         <form action="#" method="get">
             <p>Dejanos tu consulta</p>
@@ -43,7 +48,7 @@
             <br><br>
             <textarea name="" id="" cols="50" rows="10" placeholder="Escribi tu consulta"></textarea>
             <br>
-            <input type="submit">
+            <input class="boton" type="submit">
         </form>
     </main>
     <footer class="footer">

@@ -362,11 +362,15 @@
     font-size: 14px; } }
 
 /* movil grande / tablets */
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 822px) {
   .header {
-    width: auto; }
+    width: 100%;
+    grid-area: header;
+    display: block;
+    justify-content: space-between;
+  }
   .logo {
-    width: 180px; }
+    width: 100%; }
   .header__nav li {
     width: 100%;
     color: white;
@@ -408,7 +412,7 @@
       color: white; } }
 
 /* MOVIL */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 534px) {
   .logo {
     width: 100%; }
   .header {

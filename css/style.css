@@ -147,24 +147,34 @@
     text-align: center; }
   .fondo {
     font-size: 14px; }
-  /* quines somo */
+  /* quines somos */
   .mainQuienes {
     /* grid-area: main; */
     font-size: 14px; } }
 
 /* movil grande / tablets */
-@media screen and (max-width: 720px) {
-  .header {
-    width: auto; }
+@media screen and (max-width: 822px) {
   .logo {
-    width: 180px; }
-  .header__nav li {
+    width: 100%; }
+  .header {
     width: 100%;
-    color: white;
-    list-style: none;
-    padding: 10px;
-    margin-bottom: 10px;
-    text-align: center; }
+    grid-area: header;
+    display: block;
+    justify-content: space-between; }
+  .header__nav {
+    grid-area: menu;
+    display: contents;
+    justify-content: left;
+    flex-wrap: wrap;
+    padding: 15px;
+    width: 90%; }
+    .header__nav li {
+      width: auto;
+      color: white;
+      list-style: none;
+      padding: 10px;
+      margin-bottom: 10px;
+      text-align: center; }
   /* marcas con las que trabajamos */
   .mainMarcas {
     grid-area: main;
@@ -352,7 +362,7 @@
     font-size: 14px; } }
 
 /* movil grande / tablets */
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 822px) {
   .header {
     width: auto; }
   .logo {

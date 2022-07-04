@@ -316,7 +316,7 @@
     font-size: 14px;
   }
 
-  /* quines somo */
+  /* quines somos */
 
   .mainQuienes {
     /* grid-area: main; */
@@ -325,22 +325,34 @@
 }
 
 /* movil grande / tablets */
-@media screen and (max-width: 720px) {
-  .header {
-    width: auto;
-  }
-
+@media screen and (max-width: 822px) {
   .logo {
-    width: 180px;
+    width: 100%;
   }
 
-  .header__nav li {
+  .header {
     width: 100%;
-    color: white;
-    list-style: none;
-    padding: 10px;
-    margin-bottom: 10px;
-    text-align: center;
+    grid-area: header;
+    display: block;
+    justify-content: space-between;
+  }
+
+  .header__nav {
+    li {
+      width: auto;
+      color: white;
+      list-style: none;
+      padding: 10px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    grid-area: menu;
+    display: contents;
+    justify-content: left;
+    flex-wrap: wrap;
+    padding: 15px;
+    width: 90%;
   }
 
   /* marcas con las que trabajamos */

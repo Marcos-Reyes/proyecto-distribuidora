@@ -65,35 +65,6 @@
 
 /* movil grande / tablets */
 @media screen and (max-width: 822px) {
-  // .logo {
-  //   width: 100%;
-  // }
-
-  .header {
-    width: 100%;
-    grid-area: header;
-    display: block;
-    justify-content: space-between;
-  }
-
-  .header__nav {
-    li {
-      width: auto;
-      color: white;
-      list-style: none;
-      padding: 10px;
-      margin-bottom: 10px;
-      text-align: center;
-    }
-
-    grid-area: menu;
-    display: contents;
-    justify-content: left;
-    flex-wrap: wrap;
-    padding: 15px;
-    width: 90%;
-  }
-
   /* marcas con las que trabajamos */
 
   .mainMarcas {
@@ -174,35 +145,6 @@
 
 /* MOVIL */
 @media screen and (max-width: 534px) {
-  .logo {
-    width: 100%;
-  }
-
-  .header {
-    width: 100%;
-    grid-area: header;
-    display: block;
-    justify-content: space-between;
-  }
-
-  .header__nav {
-    li {
-      width: auto;
-      color: white;
-      list-style: none;
-      padding: 10px;
-      margin-bottom: 10px;
-      text-align: center;
-    }
-
-    grid-area: menu;
-    display: contents;
-    justify-content: left;
-    flex-wrap: wrap;
-    padding: 15px;
-    width: 90%;
-  }
-
   .cajas {
     width: 220px;
     height: 210px;

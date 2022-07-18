@@ -17,7 +17,6 @@
   grid-template-columns: 1fr;
   grid-template-areas: "header""main""footer";
 }
-
 // .header {
 //   width: auto;
 //   grid-area: header;
@@ -26,6 +25,7 @@
 // }
 
 .logo {
+ margin: 5px;
   width: 250px;
 
   &:hover {
@@ -101,7 +101,6 @@
 // }
 
 .slider {
-  grid-area: slider;
   width: auto;
   overflow: hidden;
 

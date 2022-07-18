@@ -17,13 +17,13 @@
   grid-template-areas: "header" "main" "footer"; }
 
 .logo {
+  margin: 5px;
   width: 250px; }
   .logo:hover {
     transition: transform .5s;
     transform: scale(1.05); }
 
 .slider {
-  grid-area: slider;
   width: auto;
   overflow: hidden; }
   .slider ul {
@@ -196,8 +196,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 0.9375rem;
-  padding-bottom: 0.9375rem; }
+  padding-top: 15px;
+  padding-bottom: 15px; }
 
 .main h2 {
   padding-bottom: 0.625rem;
@@ -238,8 +238,6 @@
 
 /* movil grande / tablets */
 @media screen and (max-width: 822px) {
-  .logo {
-    width: 100%; }
   .header {
     width: 100%;
     grid-area: header;
